@@ -47,7 +47,7 @@ public class LogServiceImpl implements ILogService {
         if (page <= 0) {
             page = 1;
         }
-        if (limit < 1 || limit > WebConst.MAX_POSTS) {
+        if (limit < 1 > WebConst.MAX_POSTS) {
             limit = 10;
         }
         LogVoExample logVoExample = new LogVoExample();
